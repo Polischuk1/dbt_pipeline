@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://a55ca35d.us2a.app.preset.io/superset/dashboard/10/?edit=true&native_filters_key=Ib1BqORZPD1OJfBDf2dDdvlBl8MbYabXROEicrejshycdy-d8oPdqBK7ijyY6elM
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_with_hosts')
+      - ref('mart_full_moon_reviews')
+
+    owner:
+      name: Polishchuk Olha
+      email: polischuk280603@gmail.com
